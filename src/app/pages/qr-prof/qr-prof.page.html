@@ -18,14 +18,12 @@
     <br>a tus alumnos para registrar la asistencia 
   </p>    
 </ion-row>
-<img src="../../../assets/imgs/qr.png" alt="qrcode">
+<qr-code [value]="valorQRTexto" size="300" errorCorrectionLevel="M" />
+
 </ion-grid>
 
 
-
-
 </ion-content>
-
 
 <ion-footer>
   <ion-toolbar class="toolbar">
@@ -35,13 +33,10 @@
         <ion-col class="ion-text-center">
           <ion-icon name="person-circle-outline" size="large" (click)="navigateToPerfil()"></ion-icon>
         </ion-col>
-
-
         <ion-col class="ion-text-center">
           <ion-icon name="home-outline" size="large" (click)="navigateToHome()"></ion-icon>
 </ion-col>
-
-
+<!--En value debo traer los datos que el profesor desee traer mediante el botón de la asignatura y sigla-->
         <ion-col class="ion-text-center">
           <ion-icon name="log-out-outline" size="large" (click)="logout()"></ion-icon>
         </ion-col>

@@ -8,12 +8,15 @@ import { QrProfPageRoutingModule } from './qr-prof-routing.module';
 
 import { QrProfPage } from './qr-prof.page';
 
+import { QrCodeModule } from 'ng-qrcode';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    QrProfPageRoutingModule
+    QrProfPageRoutingModule,
+    QrCodeModule
   ],
   declarations: [QrProfPage]
 })

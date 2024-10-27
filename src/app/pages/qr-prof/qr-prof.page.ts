@@ -27,5 +27,11 @@ export class QrProfPage implements OnInit {
   }
   ngOnInit() {
   }
+  valorQRTexto:string='Alumno registrado exitosamente!'
+  valorQr={
+    codigocurso:'001-D',
+    codprofesor:'052',
+    fecha:'29-10-2025 11:30'
+  }
 
 }

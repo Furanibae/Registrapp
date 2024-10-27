@@ -69,6 +69,7 @@ const routes: Routes = [
   loadChildren: () => import('./pages/perfil-prof/perfil-prof.module').then( m => m.PerfilProfPageModule)
 },
 { path: '**', redirectTo: 'p404', pathMatch: 'full' },
+
 ];
 
 
